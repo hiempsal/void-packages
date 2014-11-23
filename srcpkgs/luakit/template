@@ -31,6 +31,6 @@ do_build() {
 	make USE_LUAJIT=1 PREFIX=/usr all
 }
 do_install() {
-	make PREFIX=/usr DESTDIR=${DESTDIR} install 
-	chmod -x ${DESTDIR}/usr/share/pixmaps/luakit.png 
+	make PREFIX=/usr DESTDIR=${DESTDIR} install
+	chmod -x ${DESTDIR}/usr/share/pixmaps/luakit.png
 }

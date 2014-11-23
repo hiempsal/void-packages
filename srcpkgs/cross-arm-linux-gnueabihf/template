@@ -23,7 +23,7 @@ distfiles="
  http://ftp.gnu.org/gnu/glibc/glibc-${_glibc_version}.tar.xz
  http://www.kernel.org/pub/linux/kernel/v3.x/linux-${_linux_version}.tar.xz"
 checksum="
- e5e8c5be9664e7f7f96e0d09919110ab5ad597794f5b1809871177a0f0f14137 
+ e5e8c5be9664e7f7f96e0d09919110ab5ad597794f5b1809871177a0f0f14137
  d334781a124ada6f38e63b545e2a3b8c2183049515a1abab6d513f109f1d717e
  2d3997f588401ea095a0b27227b1d50cdfdd416236f6567b564549d3b46ea2a2
  ed4dfd9f56b7c82e9c71331bbf8d2ea01ddfddc1b6209bd3f3c8640aa24065cf"
@@ -158,7 +158,7 @@ _glibc_build() {
 		--config-cache --enable-add-ons=nptl,ports \
 		--enable-obsolete-rpc --disable-profile \
 		--enable-kernel=2.6.27 ${_fpuflags}
-	
+
 	make ${makejobs}
 	make install_root=${_CROSS_SYSROOT} install
 
@@ -183,7 +183,7 @@ _gcc_build() {
 			-i ${_CROSS_SYSROOT}/lib/libc.so ${_CROSS_SYSROOT}/lib/libpthread.so
 		touch .sed_subst_done
 	fi
-	
+
 	../gcc-${_gcc_version}/configure \
 		--target=${_triplet} --prefix=/usr --libdir=/usr/lib \
 		--with-sysroot=${_CROSS_SYSROOT} --enable-languages=c,c++,lto \

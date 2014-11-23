@@ -15,7 +15,7 @@ only_for_archs="armv7l"
 
 do_build() {
 	unset CFLAGS CXXFLAGS LDFLAGS
-  
+
 	if [ "$CROSS_BUILD" ]; then
 		make CROSS_COMPILE=${XBPS_CROSS_TRIPLET}- Cubieboard2
 	else

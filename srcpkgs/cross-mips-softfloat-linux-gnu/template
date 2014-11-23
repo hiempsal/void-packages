@@ -154,7 +154,7 @@ _glibc_build() {
 		--config-cache --enable-add-ons=nptl,ports \
 		--enable-obsolete-rpc --disable-profile \
 		--enable-kernel=2.6.27 ${_fpuflags}
-	
+
 	make ${makejobs}
 	make install_root=${_CROSS_SYSROOT} install
 
@@ -179,7 +179,7 @@ _gcc_build() {
 			-i ${_CROSS_SYSROOT}/lib/libc.so ${_CROSS_SYSROOT}/lib/libpthread.so
 		touch .sed_subst_done
 	fi
-	
+
 	../gcc-${_gcc_version}/configure \
 		--target=${_triplet} --prefix=/usr \
 		--with-sysroot=${_CROSS_SYSROOT} --enable-languages=c,c++,lto \

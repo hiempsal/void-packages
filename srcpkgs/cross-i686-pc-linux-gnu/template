@@ -160,7 +160,7 @@ _glibc_build() {
 		--config-cache --enable-add-ons=nptl,ports \
 		--enable-obsolete-rpc --disable-profile \
 		--enable-kernel=2.6.27
-	
+
 	make ${makejobs}
 	make install_root=${_CROSS_SYSROOT} install
 

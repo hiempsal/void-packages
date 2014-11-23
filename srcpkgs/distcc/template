@@ -30,7 +30,7 @@ post_install() {
 	fi
 	vsv distccd
 
-	# gcc wrappers	
+	# gcc wrappers
 	vmkdir usr/lib/distcc/bin
 	for f in gcc cc c++ cpp g++; do
 		ln -sfr ${DESTDIR}/usr/bin/distcc ${DESTDIR}/usr/lib/distcc/bin/${f}

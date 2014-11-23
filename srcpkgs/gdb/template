@@ -31,5 +31,5 @@ post_install() {
 	[ -d ${DESTDIR}/usr/lib64 ] && rm -rf ${DESTDIR}/usr/lib64
 	for f in bfd configure standards; do
 		rm -f ${DESTDIR}/usr/share/info/${f}.info*
-	done	
+	done
 }

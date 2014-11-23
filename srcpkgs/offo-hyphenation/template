@@ -28,7 +28,7 @@ do_install() {
    vcopy "${XBPS_BUILDDIR}/${pkgname}/hyph" usr/share/doc/${pkgname}
    vcopy "*.html" usr/share/doc/${pkgname}
    vcopy "languages-info.*" usr/share/doc/${pkgname}
-   vcopy ${FILESDIR}/"README.void" usr/share/doc/${pkgname}	
+   vcopy ${FILESDIR}/"README.void" usr/share/doc/${pkgname}
    vmkdir usr/share/licenses
    vcopy ${FILESDIR}/LPPL usr/share/licenses/
 }

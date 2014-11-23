@@ -64,7 +64,7 @@ do_install() {
 
 	# Fix permissions of static libs
 	chmod -x ${DESTDIR}/usr/lib/*.a
- 
+
 	# Get rid of example Hello transformation
 	rm ${DESTDIR}/usr/lib/*LLVMHello.*
 

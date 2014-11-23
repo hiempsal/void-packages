@@ -11,4 +11,4 @@ CFLAGS+=" -static"
 
 do_install() {
 	vbin busybox busybox.static
-} 
+}

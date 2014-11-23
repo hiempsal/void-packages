@@ -20,7 +20,7 @@ pre_install() {
 }
 post_install() {
 	# Remove unused stuff.
-	rm -f ${DESTDIR}/usr/bin/atop{,sar}-2.0 
+	rm -f ${DESTDIR}/usr/bin/atop{,sar}-2.0
 	rm -rf ${DESTDIR}/etc/{init,logrotate}.d ${DESTDIR}/var
 	if [ "$build_option_systemd" ]; then
 		# systemd service

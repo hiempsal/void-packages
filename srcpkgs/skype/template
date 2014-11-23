@@ -19,16 +19,16 @@ do_install() {
 	# Executable
 	vbin ${FILESDIR}/skype.sh skype
 	vinstall skype 755 usr/lib/skype
-	
+
 	# Data
 	vmkdir usr/share/skype
 	vcopy avatars usr/share/skype
 	vcopy lang usr/share/skype
 	vcopy sounds usr/share/skype
-	
+
 	# DBus Service
 	vinstall skype.conf 644 etc/dbus-1/system.d
-	
+
 	# Icons
 	for _i in 16 32 48; do
 		vmkdir usr/share/icons/hicolor/${_i}x${_i}
@@ -36,10 +36,10 @@ do_install() {
 			usr/share/icons/hicolor/${_i}x${_i}/skype.png
 	done
 	vinstall icons/SkypeBlue_48x48.png 644 usr/share/pixmaps skype.png
-	
+
 	# Desktop file
 	vinstall skype.desktop 644 usr/share/applications
-	      
+
 	# License
 	vlicense LICENSE
 	vlicense third-party_attributions.txt

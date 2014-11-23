@@ -18,4 +18,4 @@ do_install() {
     vdoc README.txt
 }
 
-# vim: set ts=4 sw=4 sts=4 
+# vim: set ts=4 sw=4 sts=4

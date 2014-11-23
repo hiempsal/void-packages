@@ -41,7 +41,7 @@ do_install() {
 	cd ${wrksrc}/build-1.0
 	make DESTDIR=${DESTDIR} install
 }
-	
+
 gstreamer1-vaapi-devel_package() {
 	lib32disabled=yes
 	depends="gstreamer1-vaapi-${version}_${revision}"

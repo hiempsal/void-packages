@@ -10,7 +10,7 @@ configure_args="--enable-dynamic --enable-proctitle --with-tls
  --with-yielding_select=yes"
 hostmakedepends="pkg-config groff automake libtool"
 makedepends="libressl-devel libsasl-devel"
-conf_files="/etc/openldap/ldap.conf" 
+conf_files="/etc/openldap/ldap.conf"
 short_desc="OpenLDAP (Lightweight Directory Access Protocol) libraries"
 license="OpenLDAP License v2.8 - BSD alike"
 maintainer="Juan RP <xtraeme@gmail.com>"
@@ -31,7 +31,7 @@ post_install() {
 	mv ${DESTDIR}/usr/share/man/man5/ldap.conf.5 ${DESTDIR}/usr/share/man
 	rm -f ${DESTDIR}/usr/share/man/man5/*
 	mv ${DESTDIR}/usr/share/man/ldap.conf.5 ${DESTDIR}/usr/share/man/man5
-	# License	
+	# License
 	vinstall LICENSE 644 usr/share/licenses/$pkgname
 
 	chmod 755 ${DESTDIR}/usr/lib/*.so.*

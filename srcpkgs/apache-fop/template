@@ -7,7 +7,7 @@ maintainer="Carlo Dormeletti <carloDOTdormelettiATaliceDOTit>"
 license="Apache-2.0"
 homepage="http://xmlgraphics.apache.org/fop/"
 update_pkgname="fop"
-distfiles="http://mirror.dkd.de/apache/xmlgraphics/fop/source/fop-${version}-src.tar.gz 
+distfiles="http://mirror.dkd.de/apache/xmlgraphics/fop/source/fop-${version}-src.tar.gz
 	http://mirror.dkd.de/apache/xmlgraphics/fop/binaries/fop-${version}-bin.tar.gz"
 checksum="58164cb3298d130522ecd445b8082c71c36242ea6464c8f02ab4157e4a332522
 	0697a90c2f0b0602bf707070267caecc59638a8bf7a719d5950acff764f57b8e"
@@ -25,7 +25,7 @@ do_build(){
 }
 
 do_install() {
-    _prefix="usr/share/fop" 
+    _prefix="usr/share/fop"
     _docs="usr/share/doc/fop-${version}"
     vmkdir ${_prefix}
     vmkdir ${_docs}

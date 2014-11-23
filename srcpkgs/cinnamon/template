@@ -33,7 +33,7 @@ pre_configure() {
 	# Add polkit agent to required components
 	sed -i 's/RequiredComponents=\(.*\)$/RequiredComponents=\1polkit-gnome-authentication-agent-1;/' files/usr/share/cinnamon-session/sessions/cinnamon*.session
 
-	# fix for the python2 PAM module  
+	# fix for the python2 PAM module
 	sed -i 's:import PAM:import pam:' files/usr/lib/cinnamon-settings/modules/cs_user.py
 
 	# Use pkexec instead of gksu

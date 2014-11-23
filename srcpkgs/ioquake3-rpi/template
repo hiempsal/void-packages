@@ -17,7 +17,7 @@ makedepends="SDL-devel rpi-firmware"
 do_configure() {
 	# Fetch ioquake3 for rpi
 	git clone git://github.com/raspberrypi/quake3.git $pkgname --depth=1
-	
+
 	cd $pkgname
 	patch build.sh < ${FILESDIR}/ioquake3-build.sh.patch
 	sed -e "s,/opt/vc,$XBPS_CROSS_BASE/opt/vc,g" -i build.sh

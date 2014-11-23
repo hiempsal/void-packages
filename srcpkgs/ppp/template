@@ -33,7 +33,7 @@ do_configure() {
 	# Enable Microsoft Proprietary Callback Control Protocol
 	sed -i "s:^#CBCP=y:CBCP=y:" pppd/Makefile.linux
 
-	./configure --prefix=/usr 
+	./configure --prefix=/usr
 }
 
 do_build() {

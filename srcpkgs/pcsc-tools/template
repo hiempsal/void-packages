@@ -22,7 +22,7 @@ do_install(){
     cp ${wrksrc}/scriptor ${DESTDIR}/usr/bin
     cp ${wrksrc}/gscriptor ${DESTDIR}/usr/bin
 
-    # copy the manpages in /usr/share/man/	
+    # copy the manpages in /usr/share/man/
     mkdir -p ${DESTDIR}/usr/share/man/man1
     cp ${wrksrc}/ATR_analysis.1p ${DESTDIR}/usr/share/man/man1
     cp ${wrksrc}/pcsc_scan.1 ${DESTDIR}/usr/share/man/man1

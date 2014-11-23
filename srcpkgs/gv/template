@@ -10,7 +10,7 @@ short_desc="Postscript and PDF viewer"
 configure_args=" --with-x --enable-backing-pixmap
  --enable-international --with-default-papersize=a4"
 hostmakedepends="pkg-config xproto"
-makedepends="libX11-devel libXmu-devel libXpm-devel libXext-devel 
+makedepends="libX11-devel libXmu-devel libXpm-devel libXext-devel
  libXt-devel libICE-devel libXaw3d-devel zlib-devel bzip2-devel
  libXinerama-devel ghostscript"
 depends="ghostscript"

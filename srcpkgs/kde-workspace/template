@@ -45,7 +45,7 @@ build_options="systemd"
 pre_configure() {
 	sed -e "s,@PKG_SYSCONFDIR@,/etc,g" -i kdm/kcm/main.cpp
 }
-	
+
 post_install() {
 	vmkdir etc/pam.d
 	for f in kde kde-np kscreensaver; do

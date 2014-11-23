@@ -10,4 +10,4 @@ distfiles="${SOURCEFORGE_SITE}/stellarium/Stellarium-sources/${version}/stellari
 checksum="0fae1b6e2231ccfaba8fd00abf816a88bd89b5dc61387ac84edf479b363c6684"
 build_style=cmake
 hostmakedepends="cmake perl"
-makedepends="qt-devel MesaLib-devel zlib-devel gettext-devel doxygen graphviz-devel phonon-devel"  
+makedepends="qt-devel MesaLib-devel zlib-devel gettext-devel doxygen graphviz-devel phonon-devel"

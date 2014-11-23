@@ -17,7 +17,7 @@ checksum="f421ca2c3897e48e6f43a5e73b140441baf2246ee73c07b5e1e592762bad590a"
 license="MIT"
 wrksrc=swc-${_githash}
 
-case "$XBPS_TARGET_MACHINE" in  
+case "$XBPS_TARGET_MACHINE" in
         arm*) _drm_drivers="nouveau";;
         i686*|x86_64*) _drm_drivers="intel nouveau";;
 esac

@@ -4,7 +4,7 @@ version=1.9.0
 revision=4
 wrksrc="${pkgname/-cli/}-${version}"
 build_style=gnu-configure
-configure_args="--enable-lua --disable-x11 --disable-xft --disable-imlib2 
+configure_args="--enable-lua --disable-x11 --disable-xft --disable-imlib2
  --disable-own-window --disable-xdamage --disable-double-buffer --enable-curl
  --enable-wlan --enable-rss --enable-ibm"
 hostmakedepends="libtool pkg-config"

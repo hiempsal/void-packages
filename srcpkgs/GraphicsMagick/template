@@ -8,7 +8,7 @@ homepage="http://www.graphicsmagick.org/"
 license="MIT"
 short_desc="GraphicsMagick Image Processing System"
 configure_args="--with-quantum-depth=16 --with-gs-font-dir=/usr/share/fonts/Type1
-  --with-modules --with-perl --without-lcms --without-jp2 --enable-shared 
+  --with-modules --with-perl --without-lcms --without-jp2 --enable-shared
   --disable-static"
 keep_libtool_archives=yes
 

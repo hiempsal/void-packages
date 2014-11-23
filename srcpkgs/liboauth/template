@@ -12,7 +12,7 @@ short_desc="C library implementing OAuth Core RFC 5849"
 maintainer="Juan RP <xtraeme@gmail.com>"
 distfiles="${SOURCEFORGE_SITE}/$pkgname/$pkgname-$version.tar.gz"
 checksum=77e372359caca5375fbcc63ac638f349e6c93c98d291992d8ebb9bb8291ca549
- 
+
 liboauth-devel_package() {
 	depends="libcurl-devel nss-devel liboauth>=${version}_${revision}"
 	short_desc+=" -- development files"

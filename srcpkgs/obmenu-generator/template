@@ -13,7 +13,7 @@ checksum="437cca97b3225b0dc5dc642c797ad30b7f1fe6024b9c6272fb6c6ed6c84c9643"
 
 do_install() {
     vbin obmenu-generator
-    vmkdir /etc/xdg/${pkgname} 
+    vmkdir /etc/xdg/${pkgname}
     vinstall schema.pl 644 /etc/xdg/${pkgname}
     vdoc README.md
     vdoc ${FILESDIR}/README.void

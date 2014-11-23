@@ -57,7 +57,7 @@ if [ "$build_option_ssl" ]; then
 else
 	configure_args+=" --without-openssl"
 fi
-	
+
 bsdtar_package() {
 	short_desc="BSD tar(1) using libarchive"
 	pkg_install() {

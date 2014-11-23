@@ -13,5 +13,5 @@ distfiles="http://www.musicpd.org/download/mpc/${version%.*}/mpc-${version}.tar.
 checksum=20735f7173cce56bec50c1d8b4633751052dc68365b29a6113206dc1cdc6e242
 
 post_install() {
-	vinstall doc/mpc-completion.bash 644 usr/share/bash-completion/completions mpc 
+	vinstall doc/mpc-completion.bash 644 usr/share/bash-completion/completions mpc
 }

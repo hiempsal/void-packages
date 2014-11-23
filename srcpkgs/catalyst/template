@@ -36,7 +36,7 @@ do_install() {
 	install -dm755 ${DESTDIR}/usr/include/GL
 	install -dm755 ${DESTDIR}/etc/{ati,acpi/events,security/console.apps}
 	install -dm755 ${DESTDIR}/usr/share/{applications,ati/amdcccle,man/man8,pixmaps}
-  
+
 	# binaries
 	install -m755 usr/sbin/* ${DESTDIR}/usr/sbin/
 	install -m755 usr/X11R6/bin/* ${DESTDIR}/usr/bin/
@@ -73,8 +73,8 @@ do_install() {
 	ln -s libAMDXvBA.so.1.0 ${DESTDIR}/usr/lib/libAMDXvBA.so.1
 	ln -s libXvBAW.so.1.0 ${DESTDIR}/usr/lib/libXvBAW.so
 	ln -s libfglrx_dm.so.1.0 ${DESTDIR}/usr/lib/libfglrx_dm.so.1
-                                                              
-	# various files 
+
+	# various files
 	cd ${wrksrc}
 
 	install -m644 usr/share/man/man8/* ${DESTDIR}/usr/share/man/man8/

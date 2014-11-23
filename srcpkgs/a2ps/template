@@ -19,7 +19,7 @@ checksum="f3ae8d3d4564a41b6e2a21f237d2f2b104f48108591e8b83497500182a3ab3a4"
 
 pre_configure() {
      sed -i "s/GPERF --version |/& head -n 1 |/" ./configure
-     sed -i "s|/usr/local/share|/usr/share|" ./configure 
+     sed -i "s|/usr/local/share|/usr/share|" ./configure
 }
 
 liba2ps-devel_package() {

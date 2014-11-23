@@ -26,7 +26,7 @@ post_install() {
 	rm -rf ${DESTDIR}/etc
 	rm -rf ${DESTDIR}/usr/share
 
-	# gcc wrappers	
+	# gcc wrappers
 	vmkdir usr/lib/distcc/bin
 	for f in gcc cc c++ cpp g++; do
 		ln -sfr ${DESTDIR}/usr/bin/distcc ${DESTDIR}/usr/lib/distcc/bin/${f}

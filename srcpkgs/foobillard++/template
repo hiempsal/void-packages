@@ -13,7 +13,7 @@ short_desc="An OpenGL billard game - fork of foobillard"
 maintainer="Juan RP <xtraeme@gmail.com>"
 license="GPL-2"
 checksum=e69218d4458c2c769396d7e8583e7309b719f8a15e9965940cf8aec2aaeca69a
- 
+
 pre_configure() {
 	sed -i 's|$prefix/foobillardplus|$prefix|' configure
 	sed -i 's|$prefix/data|$prefix/share/foobillardplus|' configure

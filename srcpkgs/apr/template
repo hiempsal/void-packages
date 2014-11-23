@@ -28,7 +28,7 @@ apr-devel_package() {
 		vmove "usr/lib/*.a"
 		vmove "usr/lib/*.so"
 		vmove "usr/lib/*.exp"
-		vmove usr/lib/pkgconfig 
+		vmove usr/lib/pkgconfig
 		ln -sf /usr/bin/libtool ${PKGDESTDIR}/usr/share/apr-1/build/libtool
 	}
 }

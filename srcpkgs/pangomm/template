@@ -12,7 +12,7 @@ license="LGPL-2.1"
 homepage="http://gtkmm.sourceforge.net"
 distfiles="${GNOME_SITE}/pangomm/2.34/$pkgname-$version.tar.xz"
 checksum=0e82bbff62f626692a00f3772d8b17169a1842b8cc54d5f2ddb1fec2cede9e41
- 
+
 pangomm-devel_package() {
 	depends="glibmm-devel cairomm-devel pango-devel ${sourcepkg}>=${version}_${revision}"
 	short_desc+=" - development files"
